@@ -1,5 +1,15 @@
-# Status
-This is the supplement template for IHE-Profiles using the IG publisher. repository is under-construction. Please try using it. If you have questions, contact John Moehrke. 
+# ITI.SVCM
 
-Instructions [are found here](https://github.com/IHE/supplement-template/wiki/Getting-Started)
+Advanced work on converting SVCM to an IG build. This is NOT normative or approved work and is still a work in progress.
+
+Sharing Valuesets, Codes, and Maps
+* https://profiles.ihe.net/ITI/
+* https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_SVCM.pdf
+
+* continuous build http://build.fhir.org/ig/IHE/ITI.SVCM/branches/main/index.html
+
+
+## Notes for changes as part of migration
+* Remove references to TF-2a/b/c/x  
+* Make sure canonical URLs are set correctly 
 
