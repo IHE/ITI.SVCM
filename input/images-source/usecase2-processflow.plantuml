@@ -1,0 +1,8 @@
+@startuml
+hide footbox
+
+participant "Terminology Repository" as Server 
+participant "Terminology Consumer" as Client 
+
+Server <- Client : "Expand Value Set [ITI-97]"
+@enduml

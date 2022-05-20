@@ -1,0 +1,12 @@
+@startuml
+hide footbox
+
+participant "Terminology Consumer" as Client
+participant "Terminology Repository" as Server
+activate Client
+activate Server
+Client -> Server : Translate Code Request:\nHTTP GET <Base>/ConceptMap/$translate
+Server -> Client : Translate Code Response:\nParameters
+deactivate Client
+deactivate Server
+@enduml

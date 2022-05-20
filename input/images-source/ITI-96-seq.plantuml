@@ -1,0 +1,20 @@
+@startuml
+hide footbox
+
+participant "Terminology Consumer" as Client
+participant "Terminology Repository" as Server
+activate Client
+activate Server
+Client -> Server : Search Code System Request:\nHTTP GET <Base>/CodeSystem
+Server -> Client : Search Code System Response:\nBundle
+deactivate Client
+deactivate Server
+
+Client -[hidden]> Server
+activate Client
+activate Server
+Client -> Server : Read Code System Request:\nHTTP GET <Base>/CodeSystem/<ResourceId>
+Server -> Client : Read Code System Response:\nCodeSystem
+deactivate Client
+deactivate Server
+@enduml

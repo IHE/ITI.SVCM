@@ -1,0 +1,20 @@
+@startuml
+hide footbox
+
+participant "Terminology Consumer" as Client
+participant "Terminology Repository" as Server
+activate Client
+activate Server
+Client -> Server : Search Concept Map Request:\nHTTP GET <Base>/ConceptMap
+Server -> Client : Search Concept Map Response:\nBundle
+deactivate Client
+deactivate Server
+
+Client -[hidden]> Server
+activate Client
+activate Server
+Client -> Server : Read Concept Map Request:\nHTTP GET <Base>/ConceptMap/<ResourceId>
+Server -> Client : Read Concept Map Response:\nConceptMap
+deactivate Client
+deactivate Server
+@enduml

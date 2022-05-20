@@ -1,0 +1,20 @@
+@startuml
+hide footbox
+
+participant "Terminology Consumer" as Client
+participant "Terminology Repository" as Server
+activate Client
+activate Server
+Client -> Server : Search Value Set Request:\nHTTP GET <Base>/ValueSet
+Server -> Client : Search Value Set Response:\nBundle
+deactivate Client
+deactivate Server
+
+Client -[hidden]> Server
+activate Client
+activate Server
+Client -> Server : Read Value Set Request:\nHTTP GET <Base>/ValueSet/<ResourceId>
+Server -> Client : Read Value Set Response:\nValueSet
+deactivate Client
+deactivate Server
+@enduml

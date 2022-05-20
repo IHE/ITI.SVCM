@@ -1,0 +1,20 @@
+@startuml
+hide footbox
+
+participant "Terminology Consumer" as Client
+participant "Terminology Repository" as Server
+activate Client
+activate Server
+Client -> Server : Validate ValueSet Code Request:\nHTTP GET <Base>/ValueSet/$validate-code
+Server -> Client : Validate ValueSet Code Response:\nParameters
+deactivate Client
+deactivate Server
+
+Client -[hidden]> Server
+activate Client
+activate Server
+Client -> Server : Validate CodeSystem Code Request:\nHTTP GET <Base>/CodeSystem/$validate-code
+Server -> Client : Validate CodeSystem Code Response:\nParameters
+deactivate Client
+deactivate Server
+@enduml
