@@ -22,8 +22,24 @@ the relevant transactions between them. Other actors that may be
 indirectly involved due to their participation in related profiles are
 not necessarily shown.
 
-<div>
+<div style="border: thin solid black;">
 {%include ActorsAndTransactions.svg%}
+</div>
+<div style="clear: left;"></div>
+<div style="border: thin solid black;">
+{%include ActorsAndTransactionsSwim.svg%}
+</div>
+<div style="clear: left;"></div>
+<div style="border: thin solid black;">
+{%include ActorsAndTransactionsMultiple.svg%}
+</div>
+<div style="clear: left;"></div>
+<div style="border: thin solid black;">
+{%include ActorsAndTransactionsTall.svg%}
+</div>
+<div style="clear: left;"></div>
+<div style="border: thin solid black;">
+<img alt="" src="ActorsAndTransactionsDiagram.png">
 </div>
 <div style="clear: left;"></div>
 **Figure 1:51.1-1: Actors and Transactions**
@@ -113,6 +129,8 @@ requirements for the grouped actor (Column 2).
 
 ### 1:51.4.1 Concepts
 
+#### 1:51.4.1.1 Definitions
+
 The FHIR terminology specification defines the following terms, see
 <http://hl7.org/fhir/R4/terminology-module.html>:
 
@@ -122,11 +140,11 @@ abstract thing, which provides meaning.
 - **Code System** - Define concepts and give them meaning through
 formal definitions, and assign codes that represent the concepts.
 Examples of code systems include ICD-10, LOINC, SNOMED-CT, and
-RxNorm. See <https://www.hl7.org/fhir/terminologies.html#valuesets>.
+RxNorm. See <https://hl7.org/fhir/R4/terminologies-systems.html>.
 
 - **Value Set** - Specifies a set of codes defined by code systems
 that can be used in a specific context. Value sets link code system
-definitions and their use in coded elements. See <https://www.hl7.org/fhir/terminologies.html#valuesets>.
+definitions and their use in coded elements. See <https://hl7.org/fhir/R4/terminologies-valuesets.html>.
 
 - **Concept Map** - Defines a mapping from a set of concepts defined
 in a code system to one or more concepts defined in other code
@@ -138,6 +156,34 @@ representations at a point in time, which typically consists of
 codes. Good practice is that a system that captures a coded value
 should be capable of reconstructing the Value Set Expansion in
 effect when a given code was selected. See <http://www.hl7.org/documentcenter/public/standards/V3/core_principles/infrastructure/coreprinciples/v3modelcoreprinciples.html#coreP_Coded_Properties-value-sets-resolution>.
+
+#### 1:51.4.1.2 Business Identifiers
+
+Some value sets, code systems, and concept maps have business identifiers, e.g., OIDs.  See Section 
+[ITI TF-2: Z.9.1](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.9.1-identifier-type).  In SVCM,
+these business identifiers should be stored in the `.identifier` element.  The FHIR specification strongly
+recommends using an http URL in the `.url` element, but if this is not possible, then the `.url` element
+can contain a URI, for example, an OID as urn:oid:X.X.X.
+
+Recommended Example:
+
+```
+  "url" : "http://example.org/fhir/ValueSet/example",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:1.2.3.4.5.6.7.8.9"
+  }],
+```
+
+Or if not possible:
+
+```
+  "url" : "urn:oid:1.2.3.4.5.6.7.8.9",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:1.2.3.4.5.6.7.8.9"
+  }],
+```
 
 ### 1:51.4.2 Use Cases
 
@@ -288,4 +334,8 @@ See [ITI TF-2: Appendix Z.8 “Mobile Security Considerations”](https://profil
 
 ## 1:51.6 SVCM Cross Profile Considerations
 
-None
+### 1:51.6.1 Sharing Value Sets (SVS)
+
+When an SVCM Terminology Repository is grouped with an [SVS](https://profiles.ihe.net/ITI/TF/Volume1/ch-21.html) Value Set Repository, then it
+should ensure the business identifiers are aligned. SVS uses OIDs as value set ids. SVCM stores
+these in the ValueSet.identifier element. See Section [51.4.1.2](#151412-business-identifiers).

@@ -3,8 +3,8 @@ hide footbox
 skinparam linetype polyline
 left to right direction
 
-agent "Terminology Repository" as Server 
-agent "Terminology Consumer" as Client
+agent "Terminology Repository\n \n \n \n \n \n \n \n \n \n \n \n \n \n " as Server 
+agent "Terminology Consumer\n \n \n \n \n \n \n \n \n \n \n \n \n \n " as Client
 
 Server <-- Client : "Query Value Set [ITI-95]"
 Server <-- Client : "Query Code System [ITI-96]"

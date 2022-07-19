@@ -2,16 +2,16 @@ This section corresponds to transaction \[ITI-99\] of the IHE IT
 Infrastructure Technical Framework. Transaction \[ITI-99\] is used by
 the Terminology Consumer and Terminology Repository Actors.
 
-### 3.99.1 Scope
+### 2:3.99.1 Scope
 
 This transaction is used by the Terminology Consumer to validate the
 existence of a given code in a value set or code system. The request is
 received by the Terminology Repository. The Terminology Repository
 processes the request and returns a response as a Parameters Resource.
 
-### 3.99.2 Actor Roles
+### 2:3.99.2 Actor Roles
 
-**Table 3.99.2-1: Actor Roles**
+**Table 2:3.99.2-1: Actor Roles**
 
 | ---------- | --------------------------------------------------------------------------------- |
 | **Actor:** | Terminology Consumer                                                              |
@@ -20,30 +20,30 @@ processes the request and returns a response as a Parameters Resource.
 | **Role:**  | Returns validation information for the code provided by the Terminology Consumer. |
 {:.grid .table-striped}
 
-### 3.99.3 Referenced Standards
+### 2:3.99.3 Referenced Standards
 
 - HL7 FHIR standard R4 <http://hl7.org/fhir/R4/index.html>
 
-### 3.99.4 Messages
+### 2:3.99.4 Messages
 <div>
 {%include ITI-99-seq.svg%}
 </div>
 <div style="clear: left;"></div>
-**Figure 3.99.4-1: Interaction Diagram**
+**Figure 2:3.99.4-1: Interaction Diagram**
 
-#### 3.99.4.1 Validate ValueSet Code Request Message
+#### 2:3.99.4.1 Validate ValueSet Code Request Message
 
 The Validate ValueSet Code Request message is a FHIR $validate-code
 operation on the ValueSet Resource.
 
-##### 3.99.4.1.1 Trigger Events
+##### 2:3.99.4.1.1 Trigger Events
 
 A Terminology Consumer triggers a Validate ValueSet Code Request to a
 Terminology Repository according to the business rules for the
 validation. These business rules are outside the scope of this
 transaction.
 
-##### 3.99.4.1.2 Message Semantics
+##### 2:3.99.4.1.2 Message Semantics
 
 A Terminology Consumer initiates an $validate-code request using HTTP
 GET as defined at
@@ -58,7 +58,7 @@ Where \[base\] is the URL of Terminology Repository.
 See [ITI TF-2: Appendix W](https://profiles.ihe.net/ITI/TF/Volume2/ch-W.html) for informative implementation material for
 this transaction.
 
-**Table 3.99.4.1.2-1: Validate ValueSet Code Message HTTP Input Parameters**
+**Table 2:3.99.4.1.2-1: Validate ValueSet Code Message HTTP Input Parameters**
 
 <table class="grid table-striped">
 <thead>
@@ -162,16 +162,16 @@ Note that 'abstract' is a property defined by many HL7 code systems that indicat
 </tbody>
 </table>
 
-##### 3.99.4.1.3 Expected Actions
+##### 2:3.99.4.1.3 Expected Actions
 
 The Terminology Repository shall process the input parameters to
 discover the code in the value set that matches the parameters given and
-return a response as per Section 3.99.4.2 or an OperationOutcome
+return a response as per Section 2:3.99.4.2 or an OperationOutcome
 Resource with an error message.
 
-#### 3.99.4.2 Validate ValueSet Code Response Message
+#### 2:3.99.4.2 Validate ValueSet Code Response Message
 
-##### 3.99.4.2.1 Trigger Events
+##### 2:3.99.4.2.1 Trigger Events
 
 The Terminology Repository found validation details of the code matching
 the input parameters
@@ -179,7 +179,7 @@ the input parameters
 specified by the Terminology Consumer as a result of a Validate ValueSet
 Code Request.
 
-##### 3.99.4.2.2 Message Semantics
+##### 2:3.99.4.2.2 Message Semantics
 
 See [ITI TF-2: Appendix Z.6](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.6-populating-the-expected-response-format) for more details on response format
 handling. See [ITI TF-2: Appendix Z.7](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.7-guidance-on-access-denied-results) for handling guidance for Access
@@ -188,9 +188,9 @@ Denied.
 The response message is a FHIR Parameters Resource with properties of
 the code set based on the out parameters defined at
 <http://hl7.org/fhir/valueset-operation-validate-code.html> and
-reproduced in Table 3.99.4.2.2-1.
+reproduced in Table 2:3.99.4.2.2-1.
 
-**Table 3.99.4.2.2-1: Validate ValueSet Code Message HTTP Output Parameters**
+**Table 2:3.99.4.2.2-1: Validate ValueSet Code Message HTTP Output Parameters**
 
 <table class="grid table-striped">
 <thead>
@@ -219,30 +219,30 @@ reproduced in Table 3.99.4.2.2-1.
 </tbody>
 </table>
 
-##### 3.99.4.2.3 Expected Actions
+##### 2:3.99.4.2.3 Expected Actions
 
 The Terminology Consumer has received the response and continues with
 its workflow.
 
-#### 3.99.4.3 Validate CodeSystem Code Request Message
+#### 2:3.99.4.3 Validate CodeSystem Code Request Message
 
 The Validate CodeSystem Code Request message is a FHIR $validate-code
 operation on the CodeSystem Resource.
 
-##### 3.99.4.3.1 Trigger Events
+##### 2:3.99.4.3.1 Trigger Events
 
 A Terminology Consumer triggers a Validate CodeSystem Code Request to a
 Terminology Repository according to the business rules for the
 validation. These business rules are outside the scope of this
 transaction.
 
-##### 3.99.4.3.2 Message Semantics
+##### 2:3.99.4.3.2 Message Semantics
 
 A Terminology Consumer initiates an $validate-code request using HTTP
 GET as defined at
 <http://hl7.org/fhir/codesystem-operation-validate-code.html> on the
 CodeSystem Resource. The required input parameters are identified in
-Table 3.99.4.3.2-1.
+Table 2:3.99.4.3.2-1.
 
 The URL for this operation is: `[base]/CodeSystem/$validate-code`
 
@@ -251,7 +251,7 @@ Where \[base\] is the URL of Terminology Repository.
 See [ITI TF-2: Appendix W](https://profiles.ihe.net/ITI/TF/Volume2/ch-W.html) for informative implementation material for
 this transaction.
 
-**Table 3.99.4.3.2-1: Validate CodeSystem Code Message HTTP Input Parameters**
+**Table 2:3.99.4.3.2-1: Validate CodeSystem Code Message HTTP Input Parameters**
 
 <table class="grid table-striped">
 <thead>
@@ -335,16 +335,16 @@ This parameter is not allowed when the code+url parameters are used.</td>
 </tbody>
 </table>
 
-##### 3.99.4.3.3 Expected Actions
+##### 2:3.99.4.3.3 Expected Actions
 
 The Terminology Repository shall process the input parameters to
 discover the code in the code system that matches the parameters given
-and return a response as per Section 3.99.4.4 or an OperationOutcome
+and return a response as per Section 2:3.99.4.4 or an OperationOutcome
 Resource with an error message.
 
-#### 3.99.4.4 Validate CodeSystem Code Response Message
+#### 2:3.99.4.4 Validate CodeSystem Code Response Message
 
-##### 3.99.4.4.1 Trigger Events
+##### 2:3.99.4.4.1 Trigger Events
 
 The Terminology Repository found validation details of the code matching
 the input parameters
@@ -352,7 +352,7 @@ the input parameters
 specified by the Terminology Consumer as a result of a Validate
 CodeSystem Code Request.
 
-##### 3.99.4.4.2 Message Semantics
+##### 2:3.99.4.4.2 Message Semantics
 
 See [ITI TF-2: Appendix Z.6](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.6-populating-the-expected-response-format) for more details on response format
 handling. See [ITI TF-2: Appendix Z.7](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.7-guidance-on-access-denied-results) for handling guidance for Access
@@ -361,9 +361,9 @@ Denied.
 The response message is a FHIR Parameters Resource with properties of
 the code set based on the out parameters defined at
 <http://hl7.org/fhir/codesystem-operation-validate-code.html> and
-reproduced in Table 3.99.4.4.2-1.
+reproduced in Table 2:3.99.4.4.2-1.
 
-**Table 3.99.4.4.2-1: Validate CodeSystem Code Message HTTP Output Parameters**
+**Table 2:3.99.4.4.2-1: Validate CodeSystem Code Message HTTP Output Parameters**
 
 <table class="grid table-striped">
 <thead>
@@ -392,11 +392,11 @@ reproduced in Table 3.99.4.4.2-1.
 </tbody>
 </table>
 
-##### 3.99.4.4.3 Expected Actions
+##### 2:3.99.4.4.3 Expected Actions
 
 The Terminology Consumer has received the response and continues with
 its workflow.
 
-### 3.99.5 Security Considerations
+### 2:3.99.5 Security Considerations
 
 See the general Security Consideration in [ITI TF-1: 51.5](volume-1.html#1515-svcm-security-considerations).

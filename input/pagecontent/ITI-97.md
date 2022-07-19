@@ -2,7 +2,7 @@ This section corresponds to transaction \[ITI-97\] of the IHE IT
 Infrastructure Technical Framework. Transaction \[ITI-97\] is used by
 the Terminology Consumer and Terminology Repository Actors.
 
-### 3.97.1 Scope
+### 2:3.97.1 Scope
 
 This transaction is used by the Terminology Consumer to expand a given
 ValueSet to return the full list of concepts available in that ValueSet.
@@ -10,9 +10,9 @@ The request is received by the Terminology Repository. The Terminology
 Repository processes the request and returns a response of the expanded
 ValueSet.
 
-### 3.97.2 Actor Roles
+### 2:3.97.2 Actor Roles
 
-**Table 3.97.2-1: Actor Roles**
+**Table 2:3.97.2-1: Actor Roles**
 
 | ---------- | ----------------------------------------------------------------------------------------------------- |
 | **Actor:** | Terminology Consumer                                                                                  |
@@ -21,31 +21,31 @@ ValueSet.
 | **Role:**  | Returns information for the expanded ValueSet based on criteria provided by the Terminology Consumer. |
 {:.grid .table-striped}
 
-### 3.97.3 Referenced Standards
+### 2:3.97.3 Referenced Standards
 
 - HL7 FHIR standard R4 <http://hl7.org/fhir/R4/index.html>
 
-### 3.97.4 Messages
+### 2:3.97.4 Messages
 
 <div>
 {%include ITI-97-seq.svg%}
 </div>
 <div style="clear: left;"></div>
-**Figure 3.97.4-1: Interaction Diagram**
+**Figure 2:3.97.4-1: Interaction Diagram**
 
-#### 3.97.4.1 Expand Value Set Request Message
+#### 2:3.97.4.1 Expand Value Set Request Message
 
 The Expand Value Set Request message is a FHIR $expand operation on the
 ValueSet Resource.
 
-##### 3.97.4.1.1 Trigger Events
+##### 2:3.97.4.1.1 Trigger Events
 
 A Terminology Consumer triggers an Expand Value Set Request to a
 Terminology Repository according to the business rules for the
 expansion. These business rules are outside the scope of this
 transaction.
 
-##### 3.97.4.1.2 Message Semantics
+##### 2:3.97.4.1.2 Message Semantics
 
 A Terminology Consumer initiates an $expand request using HTTP GET as
 defined at <http://hl7.org/fhir/R4/valueset-operation-expand.html> on the
@@ -62,7 +62,7 @@ Where \[base\] is the URL of Terminology Repository.
 See [ITI TF-2: Appendix W](https://profiles.ihe.net/ITI/TF/Volume2/ch-W.html) for informative implementation material for
 this transaction.
 
-**Table 3.97.4.1.2-1: Expand Value Set Message HTTP Input Parameters**
+**Table 2:3.97.4.1.2-1: Expand Value Set Message HTTP Input Parameters**
 
 <table class="grid table-striped">
 <thead>
@@ -241,7 +241,7 @@ Text Search engines such as Lucene or Solr, long with their considerable functio
 </tbody>
 </table>
 
-###### 3.97.4.1.2.1 Example Request Message
+###### 2:3.97.4.1.2.1 Example Request Message
 
 An example request message from
 <http://hl7.org/fhir/valueset-operation-expand.html> is:
@@ -250,22 +250,22 @@ An example request message from
 GET [base]/ValueSet/$expand?url=http://acme.com/fhir/ValueSet/23
 ```
 
-##### 3.97.4.1.3 Expected Actions
+##### 2:3.97.4.1.3 Expected Actions
 
 The Terminology Repository shall process the input parameters to
 discover the ValueSet that matches the parameters given and return a
-response as per Section 3.97.4.2 or an OperationOutcome with an error
+response as per Section 2:3.97.4.2 or an OperationOutcome with an error
 message.
 
-#### 3.97.4.2 Expand Value Set Response Message
+#### 2:3.97.4.2 Expand Value Set Response Message
 
-##### 3.97.4.2.1 Trigger Events
+##### 2:3.97.4.2.1 Trigger Events
 
 The Terminology Repository found expanded value set matching the input
 parameters specified by the Terminology Consumer as a result of a Expand
 Value Set Request.
 
-##### 3.97.4.2.2 Message Semantics
+##### 2:3.97.4.2.2 Message Semantics
 
 See [ITI TF-2: Appendix Z.6](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.6-populating-the-expected-response-format) for more details on response format
 handling. See [ITI TF-2: Appendix Z.7](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.7-guidance-on-access-denied-results) for handling guidance for Access
@@ -274,7 +274,7 @@ Denied.
 The response message is a FHIR ValueSet Resource with the expansion
 element populated with the expanded ValueSet concepts.
 
-###### 3.97.4.2.2.1 Example Response Message
+###### 2:3.97.4.2.2.1 Example Response Message
 
 An example response message from
 <http://hl7.org/fhir/valueset-operation-expand.html> is:
@@ -300,11 +300,11 @@ HTTP/1.1 200 OK
 </ValueSet>
 ```
 
-##### 3.97.4.2.3 Expected Actions
+##### 2:3.97.4.2.3 Expected Actions
 
 The Terminology Consumer has received the response and continues with
 its workflow.
 
-### 3.97.5 Security Considerations
+### 2:3.97.5 Security Considerations
 
 See the general Security Consideration in [ITI TF-1: 51.5](volume-1.html#1515-svcm-security-considerations).

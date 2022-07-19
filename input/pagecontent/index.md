@@ -16,29 +16,25 @@ specification.
 This guide is organized into four main sections:
 
 1. Volume I: [Overview](volume-1.html)
-   1. [Actors and Transactions](volume-1.html#actors-and-transactions)
-   1. [Actor Options](volume-1.html#actor-options)
-   1. [Actor Required Groupings](volume-1.html#required-groupings)
-   1. [Overview](volume-1.html#overview)
-   1. [Security Considerations](volume-1.html#security-considerations)
-   1. [Cross Profile Considerations](volume-1.html#other-grouping)
+  1. [Actors and Transactions](volume-1.html#actors-and-transactions)
+  1. [Actor Options](volume-1.html#actor-options)
+  1. [Actor Required Groupings](volume-1.html#required-groupings)
+  1. [Overview](volume-1.html#overview)
+  1. [Security Considerations](volume-1.html#security-considerations)
+  1. [Cross Profile Considerations](volume-1.html#other-grouping)
 
 2. Volume II: Transaction Detail
-   1. [FooBar do \[domain-YY\]](domain-YY.html)
+  1. [Query Value Set \[ITI-95\]](ITI-95.html)
+  1. [Query Code System \[ITI-96\]](ITI-96.html)
+  1. [Expand Value Set \[ITI-97\]](ITI-97.html)
+  1. [Lookup Code \[ITI-98\]](ITI-98.html)
+  1. [Validate Code \[ITI-99\]](ITI-99.html)
+  1. [Query Concept Map \[ITI-100\]](ITI-100.html)
+  1. [Translate Code \[ITI-101\]](ITI-101.html)
 
-3. Volume III: Metadata and Content
-  - **TODO: point to your content profiles if you have them**
-
-4. National Extensions
-  - **TODO: point at your national extensions if you have them**
-
-5. Appendix
+3. Appendix
   - [Test Plan](testplan.html)
-    - **TODO: point to your appendix if you have them**
   - [Changes to Other Profiles](other.html)
-    - **TODO: Actor and Transaction definitions.**
-    - **TODO: Any changes needed to other specifications.**
-
 
 See also the [table of contents](toc.html) and
 the index of [artifacts](artifacts.html) defined as part of this implementation guide.

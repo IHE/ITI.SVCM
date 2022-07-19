@@ -2,7 +2,7 @@ This section corresponds to transaction \[ITI-96\] of the IHE IT
 Infrastructure Technical Framework. Transaction \[ITI-96\] is used by
 the Terminology Consumer and Terminology Repository Actors.
 
-### 3.96.1 Scope
+### 2:3.96.1 Scope
 
 This transaction is used by the Terminology Consumer to solicit
 information about code systems whose data match data provided in the
@@ -10,9 +10,9 @@ query parameters on the request message. The request is received by the
 Terminology Repository. The Terminology Repository processes the request
 and returns a response of the matching code systems.
 
-### 3.96.2 Actor Roles
+### 2:3.96.2 Actor Roles
 
-**Table 3.96.2-1: Actor Roles**
+**Table 2:3.96.2-1: Actor Roles**
 
 | ---------- | -------------------------------------------------------------------------------------------------- |
 | **Actor:** | Terminology Consumer                                                                               |
@@ -20,30 +20,30 @@ and returns a response of the matching code systems.
 | **Actor:** | Terminology Repository                                                                             |
 | **Role:**  | Returns information for code system(s) matching the criteria provided by the Terminology Consumer. |
 {:.grid .table-striped}
-### 3.96.3 Referenced Standards
+### 2:3.96.3 Referenced Standards
 
 - HL7 FHIR standard R4 <http://hl7.org/fhir/R4/index.html>
 
-### 3.96.4 Messages
+### 2:3.96.4 Messages
 
 <div>
 {%include ITI-96-seq.svg%}
 </div>
 <div style="clear: left;"></div>
-**Figure 3.96.4-1: Interaction Diagram**
+**Figure 2:3.96.4-1: Interaction Diagram**
 
-#### 3.96.4.1 Search Code System Request Message
+#### 2:3.96.4.1 Search Code System Request Message
 
 The Search Code System message is a FHIR search interaction on the
 CodeSystem Resource.
 
-##### 3.96.4.1.1 Trigger Events
+##### 2:3.96.4.1.1 Trigger Events
 
 A Terminology Consumer triggers a Search Code System Request to a
 Terminology Repository according to the business rules for the search.
 These business rules are outside the scope of this transaction.
 
-##### 3.96.4.1.2 Message Semantics
+##### 2:3.96.4.1.2 Message Semantics
 
 A Terminology Consumer initiates a search interaction using HTTP GET as
 defined at <http://hl7.org/fhir/R4/http.html#search> on the CodeSystem.
@@ -75,7 +75,7 @@ specification.
 See [ITI TF-2: Appendix W](https://profiles.ihe.net/ITI/TF/Volume2/ch-W.html) for informative implementation material for
 this transaction.
 
-###### 3.96.4.1.2.1 Query Parameters
+###### 2:3.96.4.1.2.1 Query Parameters
 
 The Terminology Repository shall support the :contains and :exact
 modifiers in all of the string query parameters below defined at
@@ -101,16 +101,16 @@ version
 The Terminology Repository shall also support the following prefixes for
 the `_lastUpdated` parameter: `gt`, `lt`, `ge`, `le`, `sa`, and `eb`.
 
-##### 3.96.4.1.3 Expected Actions
+##### 2:3.96.4.1.3 Expected Actions
 
 The Terminology Repository shall process the query to discover the code
 systems that match the search parameters given, and return a response as
-per Section 3.96.4.2 or an error as per
+per Section 2:3.96.4.2 or an error as per
 <http://hl7.org/fhir/R4/search.html#errors>.
 
-#### 3.96.4.2 Search Code System Response Message
+#### 2:3.96.4.2 Search Code System Response Message
 
-##### 3.96.4.2.1 Trigger Events
+##### 2:3.96.4.2.1 Trigger Events
 
 The Terminology Repository found code systems matching the query
 parameters
@@ -118,7 +118,7 @@ parameters
 specified by the Terminology Consumer as a result of a Search Code
 System Request.
 
-##### 3.96.4.2.2 Message Semantics
+##### 2:3.96.4.2.2 Message Semantics
 
 The Terminology Repository shall support the search response message as
 defined at <http://hl7.org/fhir/R4/http.html#search> on the CodeSystem,
@@ -131,25 +131,29 @@ See [ITI TF-2: Appendix Z.6](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z
 handling. See [ITI TF-2: Appendix Z.7](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.7-guidance-on-access-denied-results) for handling guidance for Access
 Denied.
 
-##### 3.96.4.2.3 Expected Actions
+###### 2:3.96.4.2.2.1 FHIR CodeSystem Resource Constraints
+
+A CodeSystem Resource returned by the Terminology Repository shall be further constrained as described in the [CodeSystem Profile for SVCM](StructureDefinition-IHE.SVCM.CodeSystem.html).
+
+##### 2:3.96.4.2.3 Expected Actions
 
 The Terminology Consumer has received the response and continues with
 its workflow.
 
-#### 3.96.4.3 Read Code System Request Message
+#### 2:3.96.4.3 Read Code System Request Message
 
 This message represents an HTTP GET from the Terminology Consumer to the
 Terminology Repository and provides a mechanism for retrieving a single
 CodeSystem with a known resource id.
 
-##### 3.96.4.3.1 Trigger Events
+##### 2:3.96.4.3.1 Trigger Events
 
 When the Terminology Consumer possesses the id of the CodeSystem (either
 through query, database lookup, or other mechanism) for which it
 requires additional or new information, it issues a Read Code System
 Request.
 
-##### 3.96.4.3.2 Message Semantics
+##### 2:3.96.4.3.2 Message Semantics
 
 A Terminology Consumer initiates a read interaction using HTTP GET as
 defined at <http://hl7.org/fhir/R4/http.html#read> on the CodeSystem
@@ -178,30 +182,30 @@ defined in FHIR. See [ITI TF-2: Appendix Z.6](https://profiles.ihe.net/ITI/TF/Vo
 See [ITI TF-2: Appendix W](https://profiles.ihe.net/ITI/TF/Volume2/ch-W.html) for informative implementation material for
 this transaction.
 
-##### 3.96.4.3.3 Expected Actions
+##### 2:3.96.4.3.3 Expected Actions
 
 The Terminology Repository shall process the request to retrieve the
 CodeSystem that matches the given resource id, and return a response as
 defined at <http://hl7.org/fhir/R4/http.html#read> or an error code as
 defined at <http://hl7.org/fhir/http.html#Status-Codes>.
 
-#### 3.96.4.4 Read Code System Response Message
+#### 2:3.96.4.4 Read Code System Response Message
 
 The Terminology Repository’s response to a successful Read Code System
 message shall be an **HTTP 200** (OK) Status code with a CodeSystem
 Resource, or an appropriate error status code, optionally with an
 OperationOutcome Resource.
 
-##### 3.96.4.4.1 Trigger Events
+##### 2:3.96.4.4.1 Trigger Events
 
 The Terminology Repository found a CodeSystem Resource matching the
 resource identifier specified by the Terminology Consumer.
 
-##### 3.96.4.4.2 Message Semantics
+##### 2:3.96.4.4.2 Message Semantics
 
 The Read Code System Response is sent from the Terminology Repository to
 the Terminology Consumer as a single CodeSystem, as defined at
-<http://hl7.org/fhir/R4/codesystem.html>
+<http://hl7.org/fhir/R4/codesystem.html> and constrained by the [CodeSystem Profile for SVCM](StructureDefinition-IHE.SVCM.CodeSystem.html).
 
 The “content-type” of the response will depend upon the requested
 response format indicated by the Terminology Consumer.
@@ -216,11 +220,11 @@ that it was unable to fulfill the request. The Terminology Repository
 may be capable of servicing requests for response formats not listed,
 but shall, at minimum, be capable of producing XML and JSON encodings.
 
-##### 3.96.4.4.3 Expected Actions
+##### 2:3.96.4.4.3 Expected Actions
 
 The Terminology Consumer has received the response and continues with
 its workflow.
 
-### 3.96.5 Security Considerations
+### 2:3.96.5 Security Considerations
 
 See the general Security Consideration in [ITI TF-1: 51.5](volume-1.html#1515-svcm-security-considerations).
