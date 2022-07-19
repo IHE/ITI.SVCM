@@ -6,7 +6,7 @@ participant "Terminology Repository" as Server
 activate Client
 activate Server
 Client -> Server : Lookup Code Request:\nHTTP GET <Base>/CodeSystem/$lookup
-Server -> Client : Lookup Code Set Response:\nParameters
+Server -> Client : Lookup Code Response:\nParameters
 deactivate Client
 deactivate Server
 @enduml

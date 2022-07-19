@@ -6,7 +6,7 @@ participant "Terminology Repository" as Server
 activate Client
 activate Server
 Client -> Server : Expand Value Set Request:\nHTTP GET <Base>/ValueSet/$expand
-Server -> Client : Search Value Set Response:\nValueSet
+Server -> Client : Expand Value Set Response:\nValueSet
 deactivate Client
 deactivate Server
 @enduml
