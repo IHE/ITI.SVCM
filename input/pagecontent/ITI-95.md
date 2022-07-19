@@ -226,3 +226,13 @@ its workflow.
 ### 2:3.95.5 Security Considerations
 
 See the general Security Consideration in [ITI TF-1: 51.5](volume-1.html#1515-svcm-security-considerations).
+
+#### 2:3.95.5.1 Security Audit Considerations
+
+Note that the same audit message is recorded by both Terminology Consumer and Repository. The
+difference being the Audit Source element. Both sides record to show consistency
+between the message sent by the Consumer and the action taken at the Registry.
+
+The actors involved shall record audit events according to the
+[Audit Event for Query Value Set for Read by the Terminology Consumer and Repository](StructureDefinition-IHE.SVCM.Audit.ValueSet.Read.html)
+or the [Audit Event for Query Value Set for Query by the Terminology Consumer and Repository](StructureDefinition-IHE.SVCM.Audit.ValueSet.Query.html).

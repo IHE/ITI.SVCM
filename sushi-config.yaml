@@ -10,7 +10,7 @@ title: "Sharing Valuesets, Codes, and Maps (SVCM)"
 description: "The Sharing Valuesets, Codes, and Maps (SVCM) Profile defines a lightweight interface through which healthcare systems may retrieve centrally managed uniform nomenclature and mappings between code systems based on the HL7 Fast Healthcare Interoperability Resources (FHIR) specification."
 releaseLabel: ci-build
 #releaseLabel: Trial-Implementation
-date: 2022-05-16
+date: 2022-07-19
 status: active
 publisher:
   - name: IHE IT Infrastructure Technical Committee
