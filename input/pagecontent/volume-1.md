@@ -1,5 +1,3 @@
-# 1:51 Sharing Valuesets, Codes, and Maps (SVCM)
-
 The Sharing Valuesets, Codes, and Maps (SVCM) Profile defines a
 lightweight interface through which healthcare systems may retrieve
 centrally managed uniform nomenclature and mappings between code
@@ -22,24 +20,8 @@ the relevant transactions between them. Other actors that may be
 indirectly involved due to their participation in related profiles are
 not necessarily shown.
 
-<div style="border: thin solid black;">
+<div>
 {%include ActorsAndTransactions.svg%}
-</div>
-<div style="clear: left;"></div>
-<div style="border: thin solid black;">
-{%include ActorsAndTransactionsSwim.svg%}
-</div>
-<div style="clear: left;"></div>
-<div style="border: thin solid black;">
-{%include ActorsAndTransactionsMultiple.svg%}
-</div>
-<div style="clear: left;"></div>
-<div style="border: thin solid black;">
-{%include ActorsAndTransactionsTall.svg%}
-</div>
-<div style="clear: left;"></div>
-<div style="border: thin solid black;">
-<img alt="" src="ActorsAndTransactionsDiagram.png">
 </div>
 <div style="clear: left;"></div>
 **Figure 1:51.1-1: Actors and Transactions**

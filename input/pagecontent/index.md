@@ -15,24 +15,24 @@ specification.
 ### Organization of This Guide
 This guide is organized into four main sections:
 
-1. Volume I: [Overview](volume-1.html)
-  1. [Actors and Transactions](volume-1.html#actors-and-transactions)
-  1. [Actor Options](volume-1.html#actor-options)
-  1. [Actor Required Groupings](volume-1.html#required-groupings)
-  1. [Overview](volume-1.html#overview)
-  1. [Security Considerations](volume-1.html#security-considerations)
-  1. [Cross Profile Considerations](volume-1.html#other-grouping)
+- Volume I: [Overview](volume-1.html)
+  - [Actors and Transactions](volume-1.html#actors-and-transactions)
+  - [Actor Options](volume-1.html#actor-options)
+  - [Actor Required Groupings](volume-1.html#required-groupings)
+  - [Overview](volume-1.html#overview)
+  - [Security Considerations](volume-1.html#security-considerations)
+  - [Cross Profile Considerations](volume-1.html#other-grouping)
 
-2. Volume II: Transaction Detail
-  1. [Query Value Set \[ITI-95\]](ITI-95.html)
-  1. [Query Code System \[ITI-96\]](ITI-96.html)
-  1. [Expand Value Set \[ITI-97\]](ITI-97.html)
-  1. [Lookup Code \[ITI-98\]](ITI-98.html)
-  1. [Validate Code \[ITI-99\]](ITI-99.html)
-  1. [Query Concept Map \[ITI-100\]](ITI-100.html)
-  1. [Translate Code \[ITI-101\]](ITI-101.html)
+- Volume II: Transaction Detail
+  - [Query Value Set \[ITI-95\]](ITI-95.html)
+  - [Query Code System \[ITI-96\]](ITI-96.html)
+  - [Expand Value Set \[ITI-97\]](ITI-97.html)
+  - [Lookup Code \[ITI-98\]](ITI-98.html)
+  - [Validate Code \[ITI-99\]](ITI-99.html)
+  - [Query Concept Map \[ITI-100\]](ITI-100.html)
+  - [Translate Code \[ITI-101\]](ITI-101.html)
 
-3. Appendix
+- Appendix
   - [Test Plan](testplan.html)
   - [Changes to Other Profiles](other.html)
 
@@ -59,4 +59,4 @@ You can also download:
 * the definition resources in [json](definitions.json.zip), [xml](definitions.xml.zip), [ttl](definitions.ttl.zip), or [csv](csvs.zip) format, or
 * the example resources in [json](examples.json.zip), [xml](examples.xml.zip) or [ttl](examples.ttl.zip) format.
 
-The source code for this Implementation Guide can be found on **TODO: Put your github repo here**
+The source code for this Implementation Guide can be found on <https://github.com/IHE/ITI.SVCM>
