@@ -2,5 +2,7 @@
 # instructions for ignoreWarnings.txt https://confluence.hl7.org/pages/viewpage.action?pageId=66938614#ImplementationGuideParameters-ManagingWarningsandHints
 # IHE valueset that is not yet a real valueset
 Code System URI 'urn:ihe:event-type-code' is unknown so the code cannot be validated
+# Code Systems that can't be validated
+Code System URI 'http://terminology.hl7.org/ConceptMap/object-role' is unknown so the code cannot be validated
 
 

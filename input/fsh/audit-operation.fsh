@@ -65,7 +65,7 @@ Note: the pattern defined in DICOM and IHE have the client is identified as the 
 * entity contains 
 	transaction 0..1 and
     parameters 1..1
-* entity[transaction].type = BasicAuditEntityType#XrequestId
+* entity[transaction].type = $BasicAuditEntityType#XrequestId
 * entity[transaction].what.identifier.value 1..1
 * entity[transaction].what.identifier.value ^short = "the value of X-Request-Id"
 * entity[parameters].type = http://terminology.hl7.org/CodeSystem/audit-entity-type#2 "System Object"

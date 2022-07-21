@@ -16,12 +16,12 @@ specification.
 This guide is organized into four main sections:
 
 - Volume I: [Overview](volume-1.html)
-  - [Actors and Transactions](volume-1.html#actors-and-transactions)
-  - [Actor Options](volume-1.html#actor-options)
-  - [Actor Required Groupings](volume-1.html#required-groupings)
-  - [Overview](volume-1.html#overview)
-  - [Security Considerations](volume-1.html#security-considerations)
-  - [Cross Profile Considerations](volume-1.html#other-grouping)
+  - [Actors and Transactions](volume-1.html#1511-svcm-actorstransactions)
+  - [Actor Options](volume-1.html#1512-svcm-actor-options)
+  - [Actor Required Groupings](volume-1.html#1513-svcm-required-actor-groupings)
+  - [Overview](volume-1.html#1514-svcm-overview)
+  - [Security Considerations](volume-1.html#1515-svcm-security-considerations)
+  - [Cross Profile Considerations](volume-1.html#1516-svcm-cross-profile-considerations)
 
 - Volume II: Transaction Detail
   - [Query Value Set \[ITI-95\]](ITI-95.html)
