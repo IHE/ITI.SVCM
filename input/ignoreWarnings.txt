@@ -5,4 +5,5 @@ Code System URI 'urn:ihe:event-type-code' is unknown so the code cannot be valid
 # Code Systems that can't be validated
 Code System URI 'http://terminology.hl7.org/ConceptMap/object-role' is unknown so the code cannot be validated
 
-
+# this is a profile that should be ported to BasicAudit, so has no example here
+WARNING: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/SVCM/StructureDefinition/IHE.SVCM.Audit.Operation'): The Implementation Guide contains no examples for this profile

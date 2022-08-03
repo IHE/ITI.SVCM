@@ -17,12 +17,13 @@ A basic AuditEvent profile for when a RESTful Operation action happens successfu
 Note: the pattern defined in DICOM and IHE have the client is identified as the Source Role ID, and the server is identified as the Destination Role ID. This represents the query parameters are flowing from the client to the server. This may not be so obvious, as the data actually flows the opposite direction. This pattern is established and thus followed here.
 """
 * type = http://terminology.hl7.org/CodeSystem/audit-event-type#rest "Restful Operation"
-* contained ^slicing.discriminator.type = #value
-* contained ^slicing.discriminator.path = "$this"
-* contained ^slicing.rules = #open
-* contained 1..
-* contained contains parameters 1..1
-* contained[parameters] only Parameters
+// JFM, I removed this slice as I couldn't figure out how to make it not throw warnings, and I am not sure it is really needed.
+//* contained ^slicing.discriminator.type = #profile
+//* contained ^slicing.discriminator.path = "$this"
+//* contained ^slicing.rules = #open
+//* contained 1..
+//* contained contains parameters 1..1
+//* contained[parameters] only Parameters
 * subtype ^slicing.discriminator.type = #value
 * subtype ^slicing.discriminator.path = "$this"
 * subtype ^slicing.rules = #open // allow other codes
