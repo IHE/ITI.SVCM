@@ -113,9 +113,7 @@ per Section 2:3.96.4.2 or an error as per
 ##### 2:3.96.4.2.1 Trigger Events
 
 The Terminology Repository found code systems matching the query
-parameters
-
-specified by the Terminology Consumer as a result of a Search Code
+parameters specified by the Terminology Consumer as a result of a Search Code
 System Request.
 
 ##### 2:3.96.4.2.2 Message Semantics
