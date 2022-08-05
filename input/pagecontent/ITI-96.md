@@ -57,10 +57,6 @@ GET [base]/CodeSystem?[parameter=value]
 
 Where \[base\] is the URL of Terminology Repository.
 
-A Terminology Repository shall support combinations of search parameters
-as defined at <http://hl7.org/fhir/R4/search.html#combining>, “Composite
-Search Parameters.”
-
 A Terminology Repository shall support responding to a request for both
 the JSON and the XML messaging formats as defined in FHIR. A Terminology
 Consumer shall accept either the JSON or the XML messaging formats as
