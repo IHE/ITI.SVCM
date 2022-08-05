@@ -174,9 +174,7 @@ Resource with an error message.
 ##### 2:3.99.4.2.1 Trigger Events
 
 The Terminology Repository found validation details of the code matching
-the input parameters
-
-specified by the Terminology Consumer as a result of a Validate ValueSet
+the input parameters specified by the Terminology Consumer as a result of a Validate ValueSet
 Code Request.
 
 ##### 2:3.99.4.2.2 Message Semantics
@@ -347,9 +345,7 @@ Resource with an error message.
 ##### 2:3.99.4.4.1 Trigger Events
 
 The Terminology Repository found validation details of the code matching
-the input parameters
-
-specified by the Terminology Consumer as a result of a Validate
+the input parameters specified by the Terminology Consumer as a result of a Validate
 CodeSystem Code Request.
 
 ##### 2:3.99.4.4.2 Message Semantics
