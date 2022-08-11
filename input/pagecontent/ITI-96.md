@@ -165,8 +165,8 @@ http://example1.org/ihe/CodeSystem/1 and
 http://example2.com/ihe/CodeSystem/1 both contain the same
 \[resourceId\], they reference two different resource instances.
 
-Note: The use of "http" or "https" in URL does not override requirements
-to use TLS for security purposes.
+*Note: The use of "http" or "https" in URL does not override requirements
+to use TLS for security purposes.*
 
 A Terminology Repository shall support responding to a request for both
 the JSON and the XML messaging formats as defined in FHIR. A Terminology
