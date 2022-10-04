@@ -41,6 +41,7 @@ Usage:          #example
 * id = "svcm-example-valueset"
 * name = "SVCMExampleValueSet"
 * status = #active
+* experimental = true
 * title = "SVCM Example ValueSet"
 * description = "An example ValueSet for SVCM"
 
@@ -54,6 +55,7 @@ Usage:          #example
 * id = "svcm-example2-valueset"
 * name = "SVCMExample2ValueSet"
 * status = #active
+* experimental = true
 * title = "SVCM Example 2 ValueSet"
 * description = "An example 2 ValueSet for SVCM"
 

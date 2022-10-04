@@ -29,7 +29,7 @@ Note: the pattern defined in DICOM and IHE have the client is identified as the 
 * subtype ^slicing.rules = #open // allow other codes
 * subtype 1..
 * subtype contains operation 1..1
-* subtype[operation] = http://hl7.org/fhir/restful-interaction#operation "operation" (exactly)
+* subtype[operation] = http://hl7.org/fhir/restful-interaction#operation "operation"
 * action = #E
 * recorded 1..1
 // failures are recorded differently
