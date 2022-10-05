@@ -1,6 +1,7 @@
 ## Significant changes from SVCM, Rev 1.3:
 - Clarified [1:51.4.1.2 Business Identifiers](volume-1.html#151412-business-identifiers) examples.
 - Converted resource constraint tables to StructureDefinition resources.
+- Added BasicAudit audit resources and examples.
 
 ## Issues
 
