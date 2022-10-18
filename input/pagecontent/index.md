@@ -17,7 +17,7 @@ This guide is organized into four main sections:
 
 - Volume 1: Profiles
   - [Overview](volume-1.html)
-  - [Actors and Transactions](volume-1.html#1511-svcm-actorstransactions)
+  - [Actors and Transactions](volume-1.html#1511-svcm-actors-transactions-and-content-modules)
   - [Actor Options](volume-1.html#1512-svcm-actor-options)
   - [Actor Required Groupings](volume-1.html#1513-svcm-required-actor-groupings)
   - [Overview](volume-1.html#1514-svcm-overview)
