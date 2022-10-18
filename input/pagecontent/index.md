@@ -15,15 +15,16 @@ specification.
 ### Organization of This Guide
 This guide is organized into four main sections:
 
-- Volume I: [Overview](volume-1.html)
-  - [Actors and Transactions](volume-1.html#1511-svcm-actorstransactions)
+- Volume 1: Profiles
+  - [Overview](volume-1.html)
+  - [Actors and Transactions](volume-1.html#1511-svcm-actors-transactions-and-content-modules)
   - [Actor Options](volume-1.html#1512-svcm-actor-options)
   - [Actor Required Groupings](volume-1.html#1513-svcm-required-actor-groupings)
   - [Overview](volume-1.html#1514-svcm-overview)
   - [Security Considerations](volume-1.html#1515-svcm-security-considerations)
   - [Cross Profile Considerations](volume-1.html#1516-svcm-cross-profile-considerations)
 
-- Volume II: Transaction Detail
+- Volume 2: Transaction Detail
   - [Query Value Set \[ITI-95\]](ITI-95.html)
   - [Query Code System \[ITI-96\]](ITI-96.html)
   - [Expand Value Set \[ITI-97\]](ITI-97.html)
@@ -32,12 +33,11 @@ This guide is organized into four main sections:
   - [Query Concept Map \[ITI-100\]](ITI-100.html)
   - [Translate Code \[ITI-101\]](ITI-101.html)
 
-- Appendix
-  - [Test Plan](testplan.html)
-  - [Changes to Other Profiles](other.html)
+- [Test Plan](testplan.html)
 
-See also the [table of contents](toc.html) and
-the index of [artifacts](artifacts.html) defined as part of this implementation guide.
+- [Changes to Other Profiles](other.html)
+
+Click on any of the links above, navigate the contents using the [table of contents](toc.html), or if you are looking for a specific artifact, see the index of [artifacts](artifacts.html) defined as part of this implementation guide.
 
 ### Conformance Expectations
 

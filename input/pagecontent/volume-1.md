@@ -8,17 +8,11 @@ Terminologies managed in value sets are most useful when they are
 widely shared and standardized across geography and disciplines to add
 clarity and specificity.
 
-## 1:51.1 SVCM Actors/Transactions
+## 1:51.1 SVCM Actors, Transactions and Content Modules
 
-This section defines the actors and transactions in this profile.
-General definitions of actors are given in the Technical Frameworks
-General Introduction Appendix A at
-[http://ihe.net/Technical\_Frameworks](http://ihe.net/Technical_Frameworks/).
+This section defines the actors, transactions, and/or content modules in this profile. Further information about actor and transaction definitions can be found in the IHE Technical Frameworks General Introduction [Appendix A: Actors](https://profiles.ihe.net/GeneralIntro/ch-A.html) and [Appendix B: Transactions](https://profiles.ihe.net/GeneralIntro/ch-B.html).
 
-Figure 1:51.1-1 shows the actors directly involved in the SVCM Profile and
-the relevant transactions between them. Other actors that may be
-indirectly involved due to their participation in related profiles are
-not necessarily shown.
+Figure 1:51.1-1 shows the actors directly involved in the SVCM Profile and the relevant transactions between them. Other actors that may be indirectly involved due to their participation in related profiles are not necessarily shown.
 
 <div>
 {%include ActorsAndTransactions.svg%}
@@ -26,14 +20,9 @@ not necessarily shown.
 <div style="clear: left;"></div>
 **Figure 1:51.1-1: Actors and Transactions**
 
-Table 1:51.1-1 SVCM Integration Profile - Actors and Transactions lists
-the transactions for each actor directly involved in the SVCM Profile.
-In order to claim support of this Integration Profile, an implementation
-must perform the required transactions (labeled “R”). Transactions
-labeled “O” are optional. A complete list of options defined by this
-Integration Profile is shown in Table 1:51.2-1.
+Table 1:51.1-1 lists the transactions for each actor directly involved in the SVCM Profile. In order to claim support of this profile, an implementation must perform the required transactions (labeled “R”). Transactions labeled “O” are optional. A complete list of options defined by this profile is shown in Table 1:51.2-1.
 
-**Table 1:51.1-1: SVCM Integration Profile - Actors and Transactions**
+**Table 1:51.1-1: SVCM Profile - Actors and Transactions**
 
 | Actors                 | Transactions                  | Initiator or Responder | Optionality    | Section          |
 | ---------------------- | ----------------------------- | ---------------------- | -------------- | ---------------- |
@@ -53,8 +42,7 @@ Integration Profile is shown in Table 1:51.2-1.
 |                        | Translate Code \[ITI-101\]    | Responder              | O              | [ITI TF-2: 3.101](ITI-101.html) |
 {:.grid .table-striped}
 
-**Note 1**: *A Terminology Consumer shall support at least one of these
-transactions.*
+*Note 1: A Terminology Consumer shall support at least one of these transactions.*
 
 ### 1:51.1.1 Actor Descriptions and Actor Profile Requirements
 
@@ -62,21 +50,17 @@ Most requirements are documented in ITI TF-2 Transactions. This section
 documents any additional requirements on profile’s actors.
 
 In addition to an IHE Integration Statement, the Terminology Consumer
-and Terminology Responder shall provide a CapabilityStatement Resource
-as described in ITI TF-2x: Appendix Z.4 indicating the capabilities
+and Terminology Responder shall provide a CapabilityStatement Resource indicating the capabilities
 defined for all the transactions implemented including all query
-parameters implemented.
+parameters implemented. See [ITI TF-2: Appendix Z.4](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.4-structuredefinition-resource).
 
 ## 1:51.2 SVCM Actor Options
 
-Options that may be selected for this Integration Profile are listed in
-**Table 1:51.2-1 Sharing Value Sets - Actors and Option,** along with the
-actors to which they apply. Dependencies between options, when
-applicable, are specified in notes.
+Options that may be selected for this profile are listed in Table 1:51.2-1 along with the actors to which they apply. Dependencies between options, when applicable, are specified in notes.
 
 **Table 1:51.2-1: Sharing Value Sets - Actors and Options**
 
-| Actor                  | Options          | Vol. & Section |
+| Actor                  | Options          | Volume & Section |
 | ---------------------- | ---------------- | -------------- |
 | Terminology Consumer   | Translate Option | [Section 1:51.2.1](#15121-translate-option) |
 | Terminology Repository | Translate Option | [Section 1:51.2.1](#15121-translate-option) |

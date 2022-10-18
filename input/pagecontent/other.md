@@ -5,7 +5,7 @@ This section modifies other IHE profiles, and is not a part of the SVCM profile.
 ## IHE Technical Frameworks General Introduction Appendix A: Actors
 
 | ------------------------------------------------ |
-| Editor, add the following new or modified Actors definition in the [IHE Technical Frameworks General Introduction Appendix A](https://profiles.ihe.net/GeneralIntro/ch-A.html): |
+| Editor, add the following new or modified actors to the [IHE Technical Frameworks General Introduction Appendix A](https://profiles.ihe.net/GeneralIntro/ch-A.html): |
 {:.grid .bg-info}
 
 
