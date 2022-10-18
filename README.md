@@ -6,7 +6,7 @@ Sharing Valuesets, Codes, and Maps
 * https://profiles.ihe.net/ITI/
 * https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_SVCM.pdf
 
-* continuous build http://build.fhir.org/ig/IHE/ITI.SVCM/branches/main/index.html
+* continuous build http://build.fhir.org/ig/IHE/ITI.SVCM/index.html
 
 
 ## Notes for changes as part of migration
