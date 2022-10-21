@@ -16,7 +16,7 @@
     "version" : "1.5.0",  
     "date" : "2022-10-05", 
     "desc" : "Converted from PDF to a FHIR IG.  Added in conformance resources and Basic Audit audit events with examples.  Clarified the use of business identifiers.",
-    "path" : "https://profiles.ihe.net/ITI/SVCM/1.4.0",
+    "path" : "https://profiles.ihe.net/ITI/SVCM/1.5.0",
     "status" : "trial-use",
     "fhirversion": "4.0.1",
     "sequence" : "Trial Implementation",
