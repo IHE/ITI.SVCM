@@ -41,7 +41,7 @@ Click on any of the links above, navigate the contents using the [table of conte
 
 ### Conformance Expectations
 
-IHE uses the normative words: Shall, Should, and May according to [standards conventions](https://profiles.ihe.net/GeneralIntro/ch-E.html).
+IHE uses the normative words Shall, Should, and May according to [standards conventions](https://profiles.ihe.net/GeneralIntro/ch-E.html).
 
 #### Must Support
 
@@ -55,9 +55,9 @@ Note that sometimes mustSupport will appear on elements with a minimal cardinali
 
 You can also download:
 
-* [this entire guide](full-ig.zip)
-* the definition resources in [json](definitions.json.zip), [xml](definitions.xml.zip), [ttl](definitions.ttl.zip), or [csv](csvs.zip) format, or
-* the example resources in [json](examples.json.zip), [xml](examples.xml.zip) or [ttl](examples.ttl.zip) format.
+- [this entire guide](full-ig.zip)
+- the definition resources in [json](definitions.json.zip), [xml](definitions.xml.zip), [ttl](definitions.ttl.zip), or [csv](csvs.zip) format, or
+- the example resources in [json](examples.json.zip), [xml](examples.xml.zip) or [ttl](examples.ttl.zip) format.
 
 The source code for this Implementation Guide can be found on <https://github.com/IHE/ITI.SVCM>
 

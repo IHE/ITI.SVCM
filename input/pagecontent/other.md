@@ -1,5 +1,5 @@
 <div markdown="1" class="stu-note">
-This section modifies other IHE profiles, and is not a part of the SVCM profile. The content here will be incorporated into the target narrative at a future time, usually when SVCM goes normative.
+This section modifies other IHE Profiles or documents and is not a part of the SVCM Profile. The content here will be incorporated into the target narrative at a future time, usually when SVCM goes normative.
 </div>
 
 ## IHE Technical Frameworks General Introduction Appendix A: Actors
