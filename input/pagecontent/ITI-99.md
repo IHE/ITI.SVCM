@@ -92,7 +92,7 @@ this transaction.
 <td>_format<br/>[0..1]</td>
 <td>[0..1]</td>
 <td>mime-type</td>
-<td>The requested format of the response from the mime-type value set. See <a href=https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.6-populating-the-expected-response-format>ITI TF-2: Appendix Z.6</a>.</td>
+<td>The requested format of the response from the mime-type value set. See <a href="https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.6-populating-the-expected-response-format">ITI TF-2: Appendix Z.6</a>.</td>
 </tr>
 <tr class="odd">
 <td>context<br/>[0..1]</td>
@@ -277,7 +277,7 @@ this transaction.
 <td>_format<br/>[0..1]</td>
 <td></td>
 <td>mime-type</td>
-<td>The requested format of the response from the mime-type value set. See <a href=https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.6-populating-the-expected-response-format>ITI TF-2: Appendix Z.6</a>.</td>
+<td>The requested format of the response from the mime-type value set. See <a href="https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.6-populating-the-expected-response-format">ITI TF-2: Appendix Z.6</a>.</td>
 </tr>
 <tr class="even">
 <td>codeSystem<br/>[0..1]</td>
