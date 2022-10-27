@@ -2,20 +2,11 @@ Instance: IHE.SVCM.TerminologyConsumer
 InstanceOf: CapabilityStatement
 Usage: #definition
 * description = "CapabilityStatement for Terminology Consumer Actor in the IHE IT Infrastructure Technical Framework Supplement [SVCM](index.html)."
-//* text.status = #additional
-//* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\t\tCapabilityStatement for Terminology Consumer Actor in the IHE IT Infrastructure Technical Framework Supplement\r\n\t\t\t<a href=\"https://profiles.ihe.net/ITI/SVCM/index.html\">SVCM</a>\r\n</div>"
 * name = "IHE_SVCM_TerminologyConsumer"
 * title = "IHE SVCM Terminology Consumer"
 * status = #active
 * experimental = false
 * date = "2022-03-31"
-* publisher = "Integrating the Healthcare Enterprise (IHE)"
-* contact[+]
-  * name = "IHE"
-  * telecom
-    * system = #url
-    * value = "http://ihe.net"
-* copyright = "IHE http://www.ihe.net/Governance/#Intellectual_Property"
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format[+] = #application/fhir+xml
@@ -179,20 +170,11 @@ Instance: IHE.SVCM.TerminologyRepository
 InstanceOf: CapabilityStatement
 Usage: #definition
 * description = "CapabilityStatement for Terminology Repository Actor in the IHE IT Infrastructure Technical Framework Supplement [SVCM](index.html)."
-//* text.status = #additional
-//* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\t\tCapabilityStatement for Terminology Repository Actor in the IHE IT Infrastructure Technical Framework Supplement\r\n\t\t\t<a href=\"https://profiles.ihe.net/ITI/SVCM/index.html\">SVCM</a>\r\n</div>"
 * name = "IHE_SVCM_TerminologyRepository"
 * title = "IHE SVCM Terminology Repository"
 * status = #active
 * experimental = false
 * date = "2022-03-31"
-* publisher = "Integrating the Healthcare Enterprise (IHE)"
-* contact[+]
-  * name = "IHE"
-  * telecom
-    * system = #url
-    * value = "http://ihe.net"
-* copyright = "IHE http://www.ihe.net/Governance/#Intellectual_Property"
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format[+] = #application/fhir+xml
