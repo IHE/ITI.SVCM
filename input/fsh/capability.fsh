@@ -15,8 +15,7 @@ Usage: #definition
   * mode = #client
   * documentation = "SVCM Terminology Consumer will query for terminology resources."
   * security
-    * cors = false
-    * description = "None mandated by IHE, encouraged IHE-IUA or SMART-on-FHIR"
+    * description = "Recommend [ATNA](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html), encouraged [IHE-IUA](https://profiles.ihe.net/ITI/IUA/index.html) or SMART-on-FHIR"
   * resource[+]
     * type = #ValueSet
     * supportedProfile = "https://profiles.ihe.net/ITI/SVCM/StructureDefinition/IHE.SVCM.ValueSet"
@@ -183,8 +182,7 @@ Usage: #definition
   * mode = #server
   * documentation = "SVCM Terminology Repository will respond to queries for terminology resources."
   * security
-    * cors = false
-    * description = "None mandated by IHE, encouraged IHE-IUA or SMART-on-FHIR"
+    * description = "Recommend [ATNA](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html), encouraged [IHE-IUA](https://profiles.ihe.net/ITI/IUA/index.html) or SMART-on-FHIR"
   * resource[+]
     * type = #ValueSet
     * supportedProfile = "https://profiles.ihe.net/ITI/SVCM/StructureDefinition/IHE.SVCM.ValueSet"
