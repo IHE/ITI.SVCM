@@ -4,6 +4,8 @@ Usage:          #example
 
 * id = "svcm-example-codesystem"
 * name = "SVCMExampleCodeSystem"
+* version = "1.0.0"
+* publisher = "Example Publisher"
 * status = #active
 * title = "SVCM Example CodeSystem"
 * description = "An example CodeSystem for SVCM"
@@ -22,6 +24,8 @@ Usage:          #example
 
 * id = "svcm-example-codesystem2"
 * name = "SVCMExampleCodeSystem2"
+* version = "1.0.0"
+* publisher = "Example Publisher"
 * status = #active
 * title = "SVCM Example 2 CodeSystem"
 * description = "An example CodeSystem for SVCM for mapping"
@@ -40,6 +44,8 @@ Usage:          #example
 
 * id = "svcm-example-valueset"
 * name = "SVCMExampleValueSet"
+* version = "1.0.0"
+* publisher = "Example Publisher"
 * status = #active
 * experimental = true
 * title = "SVCM Example ValueSet"
@@ -54,6 +60,8 @@ Usage:          #example
 
 * id = "svcm-example2-valueset"
 * name = "SVCMExample2ValueSet"
+* version = "1.0.0"
+* publisher = "Example Publisher"
 * status = #active
 * experimental = true
 * title = "SVCM Example 2 ValueSet"
@@ -69,6 +77,8 @@ Usage:          #example
 * url = "http://example.org/svcm/example-conceptmap"
 * id = "svcm-example-conceptmap"
 * name = "SVCM_Example_ConceptMap"
+* version = "1.0.0"
+* publisher = "Example Publisher"
 * title = "SVCM Example ConceptMap"
 * status = #draft
 * experimental = true

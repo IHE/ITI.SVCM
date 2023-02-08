@@ -1,5 +1,5 @@
 Profile:      SVCMCodeSystem
-Parent:       CodeSystem
+Parent:       shareablecodesystem
 Id:           IHE.SVCM.CodeSystem
 Title:        "SVCM CodeSystem"
 Description:  "A profile on the CodeSystem resource for SVCM."

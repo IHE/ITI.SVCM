@@ -1,5 +1,5 @@
 Profile:      SVCMValueSet
-Parent:       ValueSet
+Parent:       shareablevalueset
 Id:           IHE.SVCM.ValueSet
 Title:        "SVCM ValueSet"
 Description:  "A profile on the ValueSet resource for SVCM."
