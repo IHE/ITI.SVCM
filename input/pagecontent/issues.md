@@ -1,3 +1,8 @@
+## Significant changes from SVCM, Rev 1.5.0:
+- changed codesystem and valueset to use shareable as parent
+- quality improvements
+- capabilityStatement improvements.",
+
 ## Significant changes from SVCM, Rev 1.3:
 - Clarified [1:51.4.1.2 Business Identifiers](volume-1.html#151412-business-identifiers) examples.
 - Converted resource constraint tables to StructureDefinition resources.

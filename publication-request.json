@@ -1,0 +1,16 @@
+{
+ "package-id" : "ihe.iti.svcm",
+ "version" : "1.5.1",
+ "path" : "https://profiles.ihe.net/ITI/SVCM/1.5.1",
+ "mode" : "milestone",
+ "status" : "trial-use",
+ "sequence": "Publication",
+ "desc" : "Trial Implementation - use shareable as parent, quality, capabilityStatement improvements.",
+ "descmd" : "Version 1.5.1
+- changed codesystem and valueset to use shareable as parent
+- quality improvements
+- capabilityStatement improvements.",
+ "changes" : "issues.html"
+}
+
+
