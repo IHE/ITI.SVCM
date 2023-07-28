@@ -23,7 +23,6 @@ This guide is organized into four main sections:
   - [Overview](volume-1.html#1514-svcm-overview)
   - [Security Considerations](volume-1.html#1515-svcm-security-considerations)
   - [Cross Profile Considerations](volume-1.html#1516-svcm-cross-profile-considerations)
-
 - Volume 2: Transaction Detail
   - [Query Value Set \[ITI-95\]](ITI-95.html)
   - [Query Code System \[ITI-96\]](ITI-96.html)
@@ -32,10 +31,9 @@ This guide is organized into four main sections:
   - [Validate Code \[ITI-99\]](ITI-99.html)
   - [Query Concept Map \[ITI-100\]](ITI-100.html)
   - [Translate Code \[ITI-101\]](ITI-101.html)
-
 - [Test Plan](testplan.html)
-
 - [Changes to Other Profiles](other.html)
+- [Download and Analysis](download.html)
 
 Click on any of the links above, navigate the contents using the [table of contents](toc.html), or if you are looking for a specific artifact, see the index of [artifacts](artifacts.html) defined as part of this implementation guide.
 
@@ -50,29 +48,3 @@ The use of ```mustSupport``` in StructureDefinition profiles equivalent to the I
 mustSupport of true - only has a meaning on items that are minimal cardinality of zero (0), and applies only to the source actor populating the data. The source actor shall populate the elements marked with MustSupport, if the concept is supported by the actor, a value exists, and security and consent rules permit. 
 The consuming actors should handle these elements being populated or being absent/empty. 
 Note that sometimes mustSupport will appear on elements with a minimal cardinality greater than zero (0), this is due to inheritance from a less constrained profile.
-
-### Download 
-
-You can also download:
-
-- [this entire guide](full-ig.zip)
-- the definition resources in [json](definitions.json.zip), [xml](definitions.xml.zip), [ttl](definitions.ttl.zip), or [csv](csvs.zip) format, or
-- the example resources in [json](examples.json.zip), [xml](examples.xml.zip) or [ttl](examples.ttl.zip) format.
-
-The source code for this Implementation Guide can be found on <https://github.com/IHE/ITI.SVCM>
-
-#### Cross Version Analysis
-
-{% include cross-version-analysis.xhtml %}
-
-#### Dependency Table
-
-{% include dependency-table.xhtml %}
-
-#### Globals Table
-
-{% include globals-table.xhtml %}
-
-#### IP Statements
-
-{% include ip-statements.xhtml %}

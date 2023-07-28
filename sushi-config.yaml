@@ -86,11 +86,14 @@ pages:
   testplan.md:
     title: "Test Plan"
     generation: markdown
+  other.md:
+    title: Changes to Other Profiles
+    generation: markdown
   issues.md:
     title: Open and Closed issues
     generation: markdown
-  other.md:
-    title: Changes to Other Profiles
+  download.md:
+    title: "Download and Analysis"
     generation: markdown
     
 menu:
@@ -111,6 +114,7 @@ menu:
     "Validate Code [ITI-99]": ITI-99.html
     "Query Concept Map [ITI-100]": ITI-100.html
     "Translate Code [ITI-101]": ITI-101.html
-  Test Plan: testplan.html
   Artifacts: artifacts.html
+  Test Plan: testplan.html
   Other: other.html
+  Download: download.html
