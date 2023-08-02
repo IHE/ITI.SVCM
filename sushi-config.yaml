@@ -57,10 +57,10 @@ resources:
 pages:
 # itemize here each narrative page. Include assigned section numbers when appropriate
   index.md:
-    title: 1:51. Sharing Valuesets, Codes, and Maps (SVCM)
+    title: Sharing Valuesets, Codes, and Maps (SVCM)
     generation: markdown
   volume-1.md:
-    title: 1:51. Sharing Valuesets, Codes, and Maps Volume 1
+    title: 1:51 Sharing Valuesets, Codes, and Maps Volume 1
     generation: markdown
   ITI-95.md:
     title: 2:3.95 Query Value Set [ITI-95]
@@ -87,10 +87,10 @@ pages:
     title: "Test Plan"
     generation: markdown
   other.md:
-    title: Changes to Other Profiles
+    title: Changes to Other Specifications
     generation: markdown
   issues.md:
-    title: Open and Closed issues
+    title: Significant Changes & Issues
     generation: markdown
   download.md:
     title: "Download and Analysis"
@@ -115,6 +115,7 @@ menu:
     "Query Concept Map [ITI-100]": ITI-100.html
     "Translate Code [ITI-101]": ITI-101.html
   Artifacts: artifacts.html
-  Test Plan: testplan.html
-  Other: other.html
-  Download: download.html
+  Other:
+    Test Plan: testplan.html
+    Changes to Other IHE Specifications: other.html
+    Download and Analysis: download.html

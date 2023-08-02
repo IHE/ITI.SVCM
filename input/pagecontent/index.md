@@ -7,13 +7,13 @@ specification.
 
 <div markdown="1" class="stu-note">
 
-| [Significant Changes, Open, and Closed Issues](issues.html) |
+| [Significant Changes, Open and Closed Issues](issues.html) |
 {: .grid}
 
 </div>
 
 ### Organization of This Guide
-This guide is organized into four main sections:
+This guide is organized into following sections:
 
 - Volume 1: Profiles
   - [Overview](volume-1.html)
@@ -31,11 +31,12 @@ This guide is organized into four main sections:
   - [Validate Code \[ITI-99\]](ITI-99.html)
   - [Query Concept Map \[ITI-100\]](ITI-100.html)
   - [Translate Code \[ITI-101\]](ITI-101.html)
-- [Test Plan](testplan.html)
-- [Changes to Other Profiles](other.html)
-- [Download and Analysis](download.html)
+- Other:
+  - [Changes to Other IHE Specifications](other.html)
+  - [Download and Analysis](download.html)
+  - [Test Plan](testplan.html)
 
-Click on any of the links above, navigate the contents using the [table of contents](toc.html), or if you are looking for a specific artifact, see the index of [artifacts](artifacts.html) defined as part of this implementation guide.
+Click on any of the links above, navigate the contents using the [Table of Contents](toc.html), or if you are looking for a specific artifact, see the index of [Artifacts](artifacts.html) defined as part of this implementation guide.
 
 ### Conformance Expectations
 

@@ -178,7 +178,7 @@ of each cached locally.
 {%include usecase1-processflow.svg%}
 </div>
 <div style="clear: left;"></div>
-**Figure 1:51.4.2.1.1-1: Discovery interaction diagram**
+**Figure 1:51.4.2.1.1-1: Discovery Interaction Diagram**
 
 #### 1:51.4.2.2 Use Case \#2 - Expand a Value Set
 
@@ -223,7 +223,7 @@ entered the correct code and to make a correction if necessary.
 {%include usecase3-processflow.svg%}
 </div>
 <div style="clear: left;"></div>
-**Figure 1:51.4.2.3.1-1: Look up a Concept Use Case Diagram**
+**Figure 1:51.4.2.3.1-1: Look Up a Concept Use Case Diagram**
 
 #### 1:51.4.2.4 Use Case \#4 - Validate a code
 
