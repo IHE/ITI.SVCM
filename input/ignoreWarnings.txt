@@ -1,9 +1,14 @@
 == Suppressed Messages ==
 # instructions for ignoreWarnings.txt https://confluence.hl7.org/pages/viewpage.action?pageId=66938614#ImplementationGuideParameters-ManagingWarningsandHints
 # IHE valueset that is not yet a real valueset
-Code System URI 'urn:ihe:event-type-code' is unknown so the code cannot be validated
-# Code Systems that can't be validated
-Code System URI 'http://terminology.hl7.org/ConceptMap/object-role' is unknown so the code cannot be validated
+A definition for CodeSystem 'urn:ihe:event-type-code' could not be found, so the code cannot be validated
+
+# Understood these are draft
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/audit-entity-type|0.5.0
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/object-role|0.5.0
 
 # this is a profile that should be ported to BasicAudit, so has no example here
 WARNING: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/SVCM/StructureDefinition/IHE.SVCM.Audit.Operation'): The Implementation Guide contains no examples for this profile
+
+# IG Publisher does this to ConceptMaps resources
+WARNING: ConceptMap/svcm-example-conceptmap: ConceptMap.group[0].element[0].target[0]: The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)

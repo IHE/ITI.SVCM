@@ -10,7 +10,7 @@ to read a ConceptMap, as recorded by the Terminology Consumer and Registry.
 * subtype contains iti100 1..1
 * subtype[iti100] = urn:ihe:event-type-code#ITI-100 "Query Concept Map"
 * entity[data]
-  * role = http://terminology.hl7.org/ConceptMap/object-role#4 "Domain Resource"
+  * role = http://terminology.hl7.org/CodeSystem/object-role#4 "Domain Resource"
   * what 1..1
   * what only Reference(ConceptMap)
 
