@@ -4,11 +4,14 @@
 A definition for CodeSystem 'urn:ihe:event-type-code' could not be found, so the code cannot be validated
 
 # Understood these are draft
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/audit-entity-type|0.5.0
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/object-role|0.5.0
+MSG_DRAFT
 
 # this is a profile that should be ported to BasicAudit, so has no example here
 WARNING: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/SVCM/StructureDefinition/IHE.SVCM.Audit.Operation'): The Implementation Guide contains no examples for this profile
 
 # IG Publisher does this to ConceptMaps resources
-WARNING: ConceptMap/svcm-example-conceptmap: ConceptMap.group[0].element[0].target[0]: The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)
+EXTENSION_EXTM_CONTEXT_WRONG_XVER
+
+# CodeSystems are now encouraged to have OIDS to enable CDA use. These don't apply as these are examples
+WARNING: Resource: This resource should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
