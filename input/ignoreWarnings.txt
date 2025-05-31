@@ -2,16 +2,23 @@
 # instructions for ignoreWarnings.txt https://confluence.hl7.org/pages/viewpage.action?pageId=66938614#ImplementationGuideParameters-ManagingWarningsandHints
 # IHE valueset that is not yet a real valueset
 A definition for CodeSystem 'urn:ihe:event-type-code' could not be found, so the code cannot be validated
-
-# Understood these are draft
-MSG_DRAFT
+No definition could be found for URL value 'urn:ihe:event-type-code'
 
 # this is a profile that should be ported to BasicAudit, so has no example here
 WARNING: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/SVCM/StructureDefinition/IHE.SVCM.Audit.Operation'): The Implementation Guide contains no examples for this profile
 
-# IG Publisher does this to ConceptMaps resources
-EXTENSION_EXTM_CONTEXT_WRONG_XVER
-
 # CodeSystems are now encouraged to have OIDS to enable CDA use. These don't apply as these are examples
-WARNING: Resource: This resource should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+The resource CodeSystem/ExampleCodeSystem should have an OID assigned to cater for possible use with OID based terminology systems%
+The resource CodeSystem/ExampleCodeSystem2 should have an OID assigned to cater for possible use with OID based terminology systems%
+The resource ConceptMap/example-conceptmap could usefully have an OID assigned%
+The resource ValueSet/Example2ValueSet should have an OID assigned to cater for possible use with OID based terminology systems%
+The resource ValueSet/ExampleValueSet should have an OID assigned to cater for possible use with OID based terminology systems%
+
+# any version will does
+TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS
+
+# inherited from FHIR 
+MSG_DEPENDS_ON_DEPRECATED
+
+# Keep until new BALP is released
+The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
