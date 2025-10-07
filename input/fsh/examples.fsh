@@ -1,9 +1,9 @@
-Instance:     SVCMExampleCodeSystem
+Instance:     ExampleCodeSystem
 InstanceOf:   SVCMCodeSystem
+Title:       "SVCM Example CodeSystem"
 Usage:          #example
-
-* id = "svcm-example-codesystem"
-* name = "SVCMExampleCodeSystem"
+* name = "ExampleCodeSystem"
+* url = "http://example.org/svcm/example-codesystem"
 * version = "1.0.0"
 * publisher = "Example Publisher"
 * status = #active
@@ -12,18 +12,17 @@ Usage:          #example
 * caseSensitive = false
 * content = #complete
 * experimental = true
-* url = "http://example.org/svcm/example"
 * concept[+]
   * code = #example
   * display = "Example"
   * definition = "Example Concept"
 
-Instance:     SVCMExampleCodeSystem2
+Instance:     ExampleCodeSystem2
 InstanceOf:   SVCMCodeSystem
+Title:       "SVCM Example 2 CodeSystem"
 Usage:          #example
-
-* id = "svcm-example-codesystem2"
-* name = "SVCMExampleCodeSystem2"
+* name = "ExampleCodeSystem2"
+* url = "http://example.org/svcm/example2-codesystem"
 * version = "1.0.0"
 * publisher = "Example Publisher"
 * status = #active
@@ -32,50 +31,45 @@ Usage:          #example
 * caseSensitive = false
 * content = #complete
 * experimental = true
-* url = "http://example.org/svcm/example2"
 * concept[+]
   * code = #example
   * display = "Example"
   * definition = "Example Concept"
 
-Instance:       SVCMExampleValueSet
+Instance:       ExampleValueSet
 InstanceOf:     SVCMValueSet
+Title:      "SVCM Example ValueSet"
 Usage:          #example
-
-* id = "svcm-example-valueset"
-* name = "SVCMExampleValueSet"
+* name = "ExampleValueSet"
+* url = "http://example.org/svcm/example-valueset"
 * version = "1.0.0"
 * publisher = "Example Publisher"
 * status = #active
 * experimental = true
 * title = "SVCM Example ValueSet"
 * description = "An example ValueSet for SVCM"
+* compose.include.system = Canonical(ExampleCodeSystem)
 
-* url = "http://example.org/svcm/example-valueset"
-* compose.include.system = "http://example.org/svcm/example"
-
-Instance:       SVCMExample2ValueSet
+Instance:       Example2ValueSet
 InstanceOf:     SVCMValueSet
+Title:      "SVCM Example 2 ValueSet" 
 Usage:          #example
-
-* id = "svcm-example2-valueset"
-* name = "SVCMExample2ValueSet"
+* name = "Example2ValueSet"
+* url = "http://example.org/svcm/example2-valueset"
 * version = "1.0.0"
 * publisher = "Example Publisher"
 * status = #active
 * experimental = true
 * title = "SVCM Example 2 ValueSet"
 * description = "An example 2 ValueSet for SVCM"
+* compose.include.system = Canonical(ExampleCodeSystem2)
 
-* url = "http://example.org/svcm/example2-valueset"
-* compose.include.system = "http://example.org/svcm/example2"
-
-Instance:       SVCMExampleConceptMap
+Instance:       ExampleConceptMap
 InstanceOf:     SVCMConceptMap
+Title:      "SVCM Example ConceptMap"
 Usage:          #example
-
 * url = "http://example.org/svcm/example-conceptmap"
-* id = "svcm-example-conceptmap"
+* id = "example-conceptmap"
 * name = "SVCM_Example_ConceptMap"
 * version = "1.0.0"
 * publisher = "Example Publisher"
@@ -83,13 +77,9 @@ Usage:          #example
 * status = #draft
 * experimental = true
 * description = "An example ConceptMap for SVCM"
-* sourceCanonical = "http://example.org/svcm/example-valueset"
-* targetCanonical = "http://example.org/svcm/example2-valueset"
-
 * group[+]
-  * source = "http://example.org/svcm/example"
-  * target = "http://example.org/svcm/example2"
-
+  * source = Canonical(ExampleCodeSystem)
+  * target = Canonical(ExampleCodeSystem2)
   * element[+]
     * code = #example
     * target[+]
